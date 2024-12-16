@@ -1,0 +1,136 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid #000;
+}
+
+nav .logo {
+    text-align: left;
+}
+
+nav .logo a {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+nav .logo p {
+    font-size: 1rem;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #555;
+}
+
+/* Portfolio Page Section */
+#poftolio-page {
+    max-width: 900px;
+    text-align: left;
+    padding: 2rem 0;
+}
+
+#poftolio-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#poftolio-page p {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    text-align: center;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.portfolio-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.portfolio-grid h3 {
+    font-size: 1.5rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.portfolio-grid p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.portfolio-grid a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 2px solid #000;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.portfolio-grid a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border-top: 1px solid #000;
+}
