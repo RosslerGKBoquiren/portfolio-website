@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chore Door Game</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom Styles -->
+  <style>
+    body {
+      text-align: center;
+      background-color: #f8f9fa;
+      padding-top: 20px;
+    }
+    .door {
+      max-width: 100px;
+      cursor: pointer;
+    }
+    .door-container {
+      display: flex;
+      justify-content: center;
+      gap: 10px; /* Adjust the gap between doors */
+    }
+    #start {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+    .instructions {
+      text-align: left;
+      margin: 20px auto;
+      font-size: 1rem;
+      line-height: 1.8;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 5px;
+      max-width: 600px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1 class="mb-4">Chore Door Game</h1>
+  </header>
+  
+  <!-- Instructions -->
+  <section class="instructions">
+    <h2>Instructions</h2>
+    <ol>
+      <li>Hiding behind one of these doors is the ChoreBot.</li>
+      <li>Your mission is to open all of the doors without running into the ChoreBot.</li>
+      <li>If you manage to avoid the ChoreBot until you open the very last door, you win!</li>
+      <li>See if you can score a winning streak!</li>
+    </ol>
+  </section>
+  
+  <!-- Doors Row -->
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-3">
+        <img id="door1" class="door" src="path-to-closed-door-image" alt="Door 1">
+      </div>
+      <div class="col-md-3">
+        <img id="door2" class="door" src="path-to-closed-door-image" alt="Door 2">
+      </div>
+      <div class="col-md-3">
+        <img id="door3" class="door" src="path-to-closed-door-image" alt="Door 3">
+      </div>
+    </div>
+    <!-- Start Button -->
+    <button id="start" class="btn btn-primary">Good Luck!</button>
+  </div>
+
+  <!-- Bootstrap JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>

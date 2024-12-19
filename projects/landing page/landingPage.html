@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="AirBnb-inspired landing page">
+	<title>AirBnb - Inspired Landing Page</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+	<style>
+		html {
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" role="navigation">
+		<div class="container">
+			<a class="navbar-brand" href="#" aria-label="Airbnb Logo">Airbnb</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-lavel="Toggle-navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<form class="d-flex mx-auto" role="search"></form>
+			</div>
+		</div>
+		<ul>
+			<li><a href="#">Places to Stay</a></a>
+			<li><a href="#">Experiences</a></a>
+			<li><a href="#">Online Experiences</a></a>
+		</ul>
+		<button>Sign Up</button>
+	</nav>
+
+	<section class="hero">
+        <h1>Find Your Next Adventure</h1>
+        <form class="search-bar" id="searchForm">
+            <input type="text" id="searchInput" placeholder="Search destinations">
+            <button type="submit">Search</button>
+        </form>
+    </section>
+
+	<section class="featured">
+		<h2>Explore Nearby</h2>
+		<div class="featured-grid">
+			<div class="listing">
+				<img src="images/tokyo.jpg" alt="Listing Image 1">
+				<p>Japan - Money can’t buy you happiness but it can buy a ticket to Japan</p>
+			</div>
+			<div class="listing">
+				<img src="images/philippines.jpg" alt="Listing Image 2">
+				<p>Philippines - It's MORE fun in the Philippines</p>
+			</div>
+			<div class="listing">
+				<img src="images/sanfrancisco.jpg" alt="Listing Image 3">
+				<p>San Francisco, California - If you’re alive, you can’t be bored in San Francisco</p>
+			</div>
+			<div class="listing">
+				<img src="images/ottawa.jpg" alt="Listing Image 4">
+				<p>Ottawa, Canada - Ottawa’s Parliament Hill is where democracy finds its voice</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="call-to-action">
+		<h2>Become a Host</h2>
+		<p>Earn money and meet new people by sharing your space!</p>
+		<button>Learn More</button>
+	</section>
+
+	<footer>
+		<p>&copy; 2024 Airbnb Clone. All rights reserved.</p>
+		<ul>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Help Center</a></li>
+			<li><a href="#">Terms</a></li>
+			<li><a href="#">Privacy Policy</a></li>
+		</ul>
+	</footer>
+
+	<button id="scrollToTopBtn" style="display: none;">Top</button>
+	
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

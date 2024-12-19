@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cash_registry.css">
+    <title>Cash Registry</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Login to Cash Registry</h2>
+        <input type="text" id="cashierNumberInput" placeholder="Enter Cashier Number">
+        <input type="password" id="passwordInput" placeholder="Enter Password">
+        <button onclick="handleLogin()">Login</button>
+
+        <div id="mainMenu" style="display: none;">
+            <h2>Main Menu</h2>
+            <button onclick="showAddItemSection()">Add New Items</button>
+            <button onclick="showPurchaseSection()">Purchase Items</button>
+        </div>
+
+        <div id="addItemSection" style="display: none;">
+            <h3>Add New Item</h3>
+            <input type="text" id="itemNameInput" placeholder="Item Name">
+            <input type="number" id="priceInput" placeholder="Price">
+            <button onclick="handleAddItem()">Add Item</button>
+        </div>
+
+        <div id="purchaseSection" style="display: none;">
+            <h3>Purchase Items</h3>
+            <button onclick="handleListItems()">List Available Items</button>
+            <input type="number" id="itemNumberInput" placeholder="Item Number">
+            <input type="number" id="quantityInput" placeholder="Quantity">
+            <button onclick="handlePurchaseItem()">Add to Cart</button>
+            <button onclick="handleListCart()">View Cart</button>
+            <input type="number" id="cartIndexInput" placeholder="Cart Item Number">
+            <input type="number" id="removeQuantityInput" placeholder="Quantity to Remove">
+            <button onclick="handleRemoveFromCart()">Remove from Cart</button>
+            <button onclick="handleGetTotal()">Get Grand Total</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        function showAddItemSection() {
+            document.getElementById("addItemSection").style.display = "block";
+            document.getElementById("purchaseSection").style.display = "none";
+        }
+
+        function showPurchaseSection() {
+            document.getElementById("purchaseSection").style.display = "block";
+            document.getElementById("addItemSection").style.display = "none";
+        }
+
+        function handleLogin() {
+            const user = registry.validateUser(document.getElementById("cashierNumberInput").value, document.getElementById("passwordInput").value);
+            if (user) {
+                alert(`Welcome, ${user.getName()}!`);
+                document.getElementById("mainMenu").style.display = "block";
+            } else {
+                alert("Invalid cashier number or password");
+            }
+        }
+    </script>
+</body>
+</html>
