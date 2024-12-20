@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Contact me</title>
-	<link rel="stylesheet" type="text/css" href="contact.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="contact.css">
 </head>
 <body>
 
-	<nav>
-		<div class="logo">
-			<a href="index.html">My Portfolio</a>
-			<p>Rossler Gian Karlo Boquiren</p>
-		</div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container" style="max-width: 600px;">
+      <a class="navbar-brand" href="index.html">Rossler Boquiren</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="link.html">Links</a></li>
+          <li class="nav-item"><a class="nav-link active" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="link.html">Links</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
+  <!-- Contact Section -->
+  <main class="container text-center my-5" style="max-width: 600px;">
+    <section id="contact-page">
+      <h1 class="mb-4">Contact Me!</h1>
+      <p class="mb-3">I'd like to hear from you!</p>
+      <p class="mb-4">Please fill out the form below or reach out through any of the contact methods listed.</p>
 
-	<section id="contact-page">
-			<h1>Contact Me!</h1>
-			<p>I'd like to hear from you!</p>
-			<p>Please fill out the form below or reach out through any of the contact methods listed.</p>
+      <form action="submit_form.php" method="post" class="text-start">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" name="email" class="form-control" required>
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+      </form>
 
-			<form action="submit_form.php" method="post">
-				<label for="name">Name: </label>
-				<input type="text" id="name" name="name" required>
-				<br>
-				<label for="email">Email: </label>
-				<input type="email" id="email" name="email" required>
-				<br><br>
-				<label for="message">Message: </label>
-				<textarea id="message" name="message" rows="4" required></textarea>
-				<br><br>
-				<button type="submit">Send Message</button>
-			</form>
+      <div id="additional-contact" class="text-start mt-5">
+        <h2 class="mb-3">Other ways to reach me!</h2>
+        <ul class="list-unstyled">
+          <li><strong>School Email:</strong> 5276151@mtl.herzing.ca</li>
+          <li><strong>Email:</strong> rgkaboquiren@gmail.com</li>
+          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rgkboquiren/" target="_blank">rgkboquiren</a></li>
+          <li><strong>Phone:</strong> (514) 691-0806</li>
+        </ul>
+      </div>
+    </section>
+  </main>
 
-			<div id="additional-contact">
-				<h2>Other ways to reach me!</h2>
-				<p>Email: 5276151@mtl.herzing.ca</p>
-				<p>Email: rgkaboquiren@gmail.com</p>
-				<p>LinkedIn: <a href="https://www.linkedin.com/in/rgkboquiren/">rgkboquiren</p>
-				<p>Phone: (514) 691-0806</p>
-			</div>
-	</section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: #f9f9f9; 
+    background-color: #f9f9f9;
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -18,7 +18,7 @@ body {
 /* Navigation Bar */
 nav {
     background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     width: 100%;
     display: flex;
     justify-content: center; 
@@ -26,7 +26,6 @@ nav {
 
 nav .container {
     max-width: 600px; 
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -45,23 +44,23 @@ nav .navbar-brand:hover {
 }
 
 nav .nav-link {
-    color: #555;
+    color: #555; 
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s;
+    transition: color 0.3s ease; 
 }
 
 nav .nav-link:hover, nav .nav-link.active {
-    color: #007bff;
+    color: #007bff; 
 }
 
 /* Main Content */
 main {
-    flex: 1; 
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: flex-start; 
+    justify-content: flex-start;
     padding: 2rem 1rem;
 }
 
@@ -77,52 +76,13 @@ main img {
     border-radius: 8px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     border: 1px solid #ddd; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
 }
 
-
-/* Interactive Resume Hover Effect */
-.interactive-resume:hover {
-    transform: scale(2.2); 
+main img:hover {
+    transform: scale(2.0); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
     cursor: pointer; 
-    transition: transform 0.3s ease;
-}
-
-/* Modal Styling */
-.resume-modal {
-    display: none; 
-    position: fixed; 
-    z-index: 1000; 
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto; 
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    max-width: 80%; 
-    max-height: 80%;
-    border-radius: 8px;
-}
-
-.resume-modal .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.resume-modal .close:hover,
-.resume-modal .close:focus {
-    color: #999;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 
@@ -132,11 +92,5 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    margin-top: auto; 
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    margin-top: auto;
 }

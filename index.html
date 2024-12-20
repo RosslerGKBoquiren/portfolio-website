@@ -1,46 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>RB Website</title>
-	<link rel="stylesheet" type="text/css" href="index.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Welcome | Rossler's Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
-	
-	<nav>
-		<div class="logo">
-			<a href="index.html">My Portfolio</a>
-			<p>Rossler Gian Karlo Boquiren</p>
-		</div>
 
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="link.html">Links</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container" style="max-width: 600px;">
+      <a class="navbar-brand" href="index.html">Rossler Boquiren</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="link.html">Links</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-	<section id="landing-page">
-		<h1>Welcome to My Portfolio</h1>
-		<p>I'm Rossler, an aspiring Frontend Developper.</p>
-		<p>Currently studing at Herzing College's Software Development program
-		while working as a Lead Station Attendant at Air Canada Cargo department.</p>
+  <!-- Landing Section -->
+  <section class="landing-section text-center py-5">
+    <div class="container" style="max-width: 600px;">
+      <h1 class="mb-4">Welcome to My Portfolio</h1>
+      <p class="mb-3">I'm Rossler, an aspiring Frontend Developer.</p>
+      <p class="mb-4">
+        Currently studying at Herzing College's Software Development program while working as a Lead Station Attendant at Air Canada's Cargo department.
+      </p>
+      <div>
+        <a href="portfolio.html" class="btn btn-primary me-2">View My Work</a>
+        <a href="contact.html" class="btn btn-outline-primary">Get in Touch</a>
+      </div>
+    </div>
+  </section>
 
-		<div>
-			<a href="portfolio.html">View my work!</a><br><br>
-			<a href="contact.html">Get in touch!</a>
-		</div>
-	</section>
+  <!-- Featured Project Section -->
+  <section class="featured-project text-center py-5 bg-light">
+    <div class="container" style="max-width: 600px;">
+      <h2 class="mb-4">Featured Project</h2>
+      <p class="mb-3">Check out one of my recent projects!</p>
+      <a href="portfolio.html" class="btn btn-primary">See More Projects</a>
+    </div>
+  </section>
 
-	<section>
-		<h2>Featured Project</h2>
-		<p>Check out one of my recent projects!</p>
-		<a href="portfolio.html">See more projects!</a>
-	</section>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
