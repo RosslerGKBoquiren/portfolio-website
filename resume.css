@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', Arial, sans-serif;
-    background-color: #f9f9f9; /* Light background for consistency */
+    background-color: #f9f9f9; 
     color: #333;
     line-height: 1.6;
     min-height: 100vh;
@@ -21,11 +21,11 @@ nav {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
     display: flex;
-    justify-content: center; /* Center the navbar */
+    justify-content: center; 
 }
 
 nav .container {
-    max-width: 600px; /* Limit navbar width */
+    max-width: 600px; 
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@ nav .navbar-brand {
 }
 
 nav .navbar-brand:hover {
-    color: #007bff; /* Bootstrap primary blue */
+    color: #007bff; 
 }
 
 nav .nav-link {
@@ -57,11 +57,11 @@ nav .nav-link:hover, nav .nav-link.active {
 
 /* Main Content */
 main {
-    flex: 1; /* Pushes the footer to the bottom */
+    flex: 1; 
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-aligns content horizontally */
-    justify-content: flex-start; /* Aligns content at the top */
+    align-items: center; 
+    justify-content: flex-start; 
     padding: 2rem 1rem;
 }
 
@@ -73,37 +73,37 @@ main h1 {
 }
 
 main img {
-    max-width: 100%; /* Makes the image responsive */
-    border-radius: 8px; /* Rounded corners for aesthetics */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for polish */
-    border: 1px solid #ddd; /* Light border for separation */
+    max-width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    border: 1px solid #ddd; 
 }
 
 
 /* Interactive Resume Hover Effect */
 .interactive-resume:hover {
     transform: scale(2.2); 
-    cursor: pointer; /* Indicate interactivity */
+    cursor: pointer; 
     transition: transform 0.3s ease;
 }
 
 /* Modal Styling */
 .resume-modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* On top of everything */
+    display: none; 
+    position: fixed; 
+    z-index: 1000; 
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Enable scrolling for large content */
-    background-color: rgba(0, 0, 0, 0.8); /* Black with opacity */
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal-content {
     margin: auto;
     display: block;
-    max-width: 80%; /* Limit size */
+    max-width: 80%; 
     max-height: 80%;
     border-radius: 8px;
 }
@@ -132,7 +132,7 @@ footer {
     color: white;
     text-align: center;
     padding: 1rem 0;
-    margin-top: auto; /* Ensures the footer sticks to the bottom */
+    margin-top: auto; 
     width: 100%;
 }
 
