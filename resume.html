@@ -1,91 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Resume</title>
-	<link rel="stylesheet" type="text/css" href="resume.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Resume</title>
+  <link rel="stylesheet" type="text/css" href="resume.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 </head>
 <body>
 
-	<nav>
-		<div class="logo">
-			<a href="index.html">My Portfolio</a>
-			<p>Rossler Gian Karlo Boquiren</p>
-		</div>
-
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="about.html">About</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="resume.html">Resume</a></li>
-			<li><a href="link.html">Links</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</nav>
-
-	<section id="resume">
-        <h1>Rossler Gian Karlo Boquiren</h1>
-        <p>Montreal, QC H3S1R7 | (C) 514-691-0806 | 5276151@mtl.herzing.ca</p>
-
-        <h2>Objective</h2>
-        <p>To secure a Front-end developer position where I can leverage my knowledge in HTML, CSS, JavaScript, TypeScript, Python, React, Git and API to deliver high-quality, scalable projects. I aim to collaborate with cross-functional teams to drive innovation and efficiency.</p>
-
-        <h2>Technical Skills</h2>
-        <ul>
-            <li><strong>Programming Languages:</strong> HTML, CSS, JavaScript, Python, SQL, PHP, C# (.NET), JAVA (VB.NET), TypeScript, React, GIT, and API</li>
-            <li><strong>Tools & Software:</strong> AutoCAD, SketchUp, Revit (3D Modeling), Microsoft Office (Word, Excel, PowerPoint)</li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container" style="max-width: 600px;">
+      <a class="navbar-brand" href="index.html">Rossler Boquiren</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a class="nav-link active" href="resume.html">Resume</a></li>
+          <li class="nav-item"><a class="nav-link" href="link.html">Links</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
+      </div>
+    </div>
+  </nav>
 
-        <h2>Education</h2>
-        <ul>
-            <li><strong>HERZING COLLEGE</strong> - AEC Diploma, Software Development</li>
-            <li><strong>HERZING COLLEGE</strong> - AEC Diploma, Technical Sustainable Architecture</li>
-            <li><strong>VANIER COLLEGE</strong> - AEC Certification, Financial Security Advisor</li>
-            <li><strong>VANIER COLLEGE</strong> - DEC, Accounting Management</li>
-        </ul>
+  <!-- Resume Content -->
+  <main class="container text-center my-5" style="max-width: 600px;">
+    <h1 class="mb-4">My Resume</h1>
+    <img src="images/resume.jpeg" alt="Rossler Gian Karlo Boquiren's Resume" class="img-fluid shadow-lg interactive-resume" style="border-radius: 8px;">
+  </main>
 
-        <h2>Work Experience</h2>
-        <h3>Lead Station Attendant</h3>
-        <p><strong>Air Canada</strong> – YUL Dorval, QC (2022 to Current)</p>
-        <ul>
-            <li>Trained junior station attendants, resulting in a 15% increase in team efficiency and improved adherence to safety protocols.</li>
-            <li>Expedited equipment repairs, reducing downtime and preventing flight delays.</li>
-            <li>Operated equipment such as forklifts, tractors, and tugs safely and efficiently.</li>
-            <li>Communicate with planners and station attendants to ensure timely and accurate coordination of cargo goods to designated flights, adhering to specific schedules and gate assignments.</li>
-            <li>Verify cargo shipments to ensure compliance with safety regulations and operational standards, safeguarding both aircraft and passenger safety</li>
-            <li>Collaborate with ground operations to streamline cargo handling and loading processes, optimizing efficiency and minimizing delays.</li>
-        </ul>
+  <!-- Popup Modal -->
+    <div id="resumeModal" class="resume-modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" alt="Expanded Resume">
+    </div>
 
-        <h3>Financial Security Advisor</h3>
-        <p><strong>World Financial Group Insurance Agency of Canada</strong> – Montreal, QC (2016 to Current)</p>
-        <ul>
-            <li>Generated over $50,000 in sales commissions within two years, ranking in the top 10% of agency performers.</li>
-            <li>Promoted to Marketing Director in 2018 for surpassing targets and leading a team with 20% revenue growth.</li>
-            <li>Developed personalized financial strategies to help clients protect their assets against risks such as death, debts, and final expenses</li>
-            <li>Assessed individual client needs to provide tailored insurance solutions, ensuring long-term financial security and peace of mind</li>
-            <li>Guided clients through policy options and ensured comprehensive coverage that aligned with their financial goals and risk management needs</li>
-        </ul>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">© 2024 Rossler Gian Karlo Boquiren. All Rights Reserved.</p>
+  </footer>
 
-        <h3>Customer Service Representative</h3>
-        <p><strong>Insta-Cheques</strong> – St Laurent, QC (2015 to 2017)</p>
-        <ul>
-            <li>Exceeded sales goals, making the branch top-performing in Montreal with a 15% profit increase.</li>
-            <li>Improved debt collection ratings by 10%.</li>
-            <li>Optimized staff schedules with management to maintain budget limits</li>
-        </ul>
-
-        <h3>Assistant Manager</h3>
-        <p><strong>St Hubert</strong> – Pierrefonds, QC (2013 to 2014)</p>
-        <ul>
-            <li>Managed and trained a team of 10+ staff, improving workflow and customer satisfaction by 15%.</li>
-            <li>Implemented daily task lists, enhancing inspection results by 20%.</li>
-            <li>Resolved guest complaints effectively, retaining loyal customers and attracting new clientele.</li>
-        </ul>
-
-        <h2>Languages</h2>
-        <p>English (Fluent), French (Proficient), Filipino (Native)</p>
-    </section>
-
+  <script src="resume.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
