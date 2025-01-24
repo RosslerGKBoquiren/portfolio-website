@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: 'Roboto', Arial, sans-serif;
     background-color: #f9f9f9;
@@ -26,7 +25,7 @@ nav {
 }
 
 nav .container {
-    max-width: 600px; /* Restrict navbar width */
+    max-width: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -56,7 +55,7 @@ main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center content horizontally */
+    align-items: center;
     justify-content: flex-start;
     padding: 2rem 1rem;
 }
@@ -81,4 +80,100 @@ footer {
     text-align: center;
     padding: 1rem 0;
     margin-top: auto;
+}
+
+/* Nutrition Facts Section */
+.nutrition-facts {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nutrition-facts .label {
+    border: 2px solid black;
+    width: 270px;
+    margin: 20px auto;
+    padding: 0 7px;
+}
+
+.nutrition-facts header h1 {
+    text-align: center;
+    margin: -4px 0;
+    letter-spacing: 0.15px;
+}
+
+.nutrition-facts p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nutrition-facts .divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+}
+
+.nutrition-facts .bold {
+    font-weight: 800;
+}
+
+.nutrition-facts .large {
+    height: 10px;
+}
+
+.nutrition-facts .large, 
+.nutrition-facts .medium {
+    background-color: black;
+    border: 0;
+}
+
+.nutrition-facts .medium {
+    height: 5px;
+}
+
+.nutrition-facts .small-text {
+    font-size: 0.85rem;
+}
+
+.nutrition-facts .calories-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nutrition-facts .calories-info h2 {
+    margin: 0;
+}
+
+.nutrition-facts .left-container p {
+    margin: -5px -2px;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+.nutrition-facts .calories-info span {
+    margin: -7px -2px;
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.nutrition-facts .right {
+    justify-content: flex-end;
+}
+
+.nutrition-facts .indent {
+    margin-left: 1em;
+}
+
+.nutrition-facts .double-indent {
+    margin-left: 2em;
+}
+
+.nutrition-facts .daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+}
+
+.nutrition-facts .note {
+    font-size: 0.6rem;
+    margin: 5px 0;
+    padding: 0 8px;
+    text-indent: -8px;
 }
