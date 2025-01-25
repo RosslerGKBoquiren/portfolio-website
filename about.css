@@ -5,7 +5,7 @@
 .container-xl,
 .container-xxl {
     max-width: none !important; 
-    width: 100% !important;    
+    width: auto !important;    
 }
 
 @media (min-width: 992px),
@@ -18,9 +18,10 @@
     .container-xl,
     .container-xxl {
         max-width: none !important; 
-        width: 100% !important;    
+        width: auto !important;    
     }
 }
+
 
 
 
