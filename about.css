@@ -15,16 +15,6 @@ body {
     flex-direction: column;
 }
 
-main .container {
-    max-width: 750px;
-}
-
-/* .section {
-    max-width: 440px;
-    margin: 0 auto;
-    text-align: left;
-} */
-
 /* Navigation Bar */
 nav {
     background-color: #ffffff;
@@ -68,6 +58,7 @@ main {
     align-items: center;
     justify-content: flex-start;
     padding: 2rem 1rem;
+    max-width: 750px;
 }
 
 main h1, main h2 {
