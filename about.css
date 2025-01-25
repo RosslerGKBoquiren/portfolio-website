@@ -13,6 +13,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+}
+
+main.container {
     max-width: 750px;
 }
 
