@@ -5,8 +5,23 @@
 .container-xl,
 .container-xxl {
     max-width: none !important; 
-    width: 100% !important;   
+    width: 100% !important;    
 }
+
+@media (min-width: 992px),
+       (min-width: 1200px),
+       (min-width: 1400px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: none !important; 
+        width: 100% !important;    
+    }
+}
+
 
 
 /* General Reset */
