@@ -13,7 +13,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
 }
 
 /* Navigation Bar */
@@ -53,13 +52,14 @@ nav .nav-link:hover, nav .nav-link.active {
 
 /* Main Content */
 main {
+    margin-top: 70px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: flex-start;
-    gap: 10px;
     padding: 20px;
     max-width: 750px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .section {
@@ -98,7 +98,6 @@ footer {
   font-size: 16px;
   width: 270px;
   margin: 0 auto;
-  border: 2px solid black;
   padding: 15px;
 }
 
