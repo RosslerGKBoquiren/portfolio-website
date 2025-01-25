@@ -13,6 +13,8 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Navigation Bar */
@@ -20,12 +22,11 @@ nav {
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 100%;
-    display: flex;
-    justify-content: center;
 }
 
 nav .container {
-    max-width: 600px;
+    max-width: 750px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -52,13 +53,9 @@ nav .nav-link:hover, nav .nav-link.active {
 
 /* Main Content */
 main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 2rem 1rem;
     max-width: 750px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
 }
 
 main h1, main h2 {
@@ -66,12 +63,14 @@ main h1, main h2 {
     font-weight: 700;
     color: #007bff;
     margin-bottom: 1.5rem;
+    text-align: left;
 }
 
 main p {
     font-size: 1rem;
     margin-bottom: 1rem;
     color: #555;
+    text-align: left;
 }
 
 /* Footer (if added later for consistency) */
