@@ -53,9 +53,15 @@ nav .nav-link:hover, nav .nav-link.active {
 
 /* Main Content */
 main {
+    margin-top: 70px;
     max-width: 450px;
     margin: 0 auto;
     padding: 2rem 1rem;
+}
+
+.section {
+    max-width: 450px;
+    text-align: left;
 }
 
 main h1, main h2 {
