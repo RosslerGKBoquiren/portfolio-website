@@ -53,7 +53,7 @@ nav .nav-link:hover, nav .nav-link.active {
 
 /* Main Content */
 main {
-    max-width: 750px;
+    max-width: 450px;
     margin: 0 auto;
     padding: 2rem 1rem;
 }
